@@ -1,8 +1,4 @@
 FROM microsoft/dotnet:2.1-sdk AS build
 
-ENV VERSION="5.2.5.20"
-
-WORKDIR /app
-ADD . /app
-RUN tar -xzf binaries/$VERSION/Pisces_$VERSION.tar.gz
-RUN chmod -R a+xr /app
+ADD binaries/5.2.5.20/Pisces_5.2.5.20.tar.gz /app
+RUN chmod -R a+xrw /app
