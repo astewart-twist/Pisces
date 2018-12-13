@@ -5,3 +5,4 @@ ENV VERSION="5.2.5.20"
 WORKDIR /app
 ADD . /app
 RUN tar -xzf binaries/$VERSION/Pisces_$VERSION.tar.gz
+RUN chmod -R a+xr /app
